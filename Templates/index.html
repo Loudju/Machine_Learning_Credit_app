@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='/css/main.css')}}">
     <title>Machine Learning Loan Application</title>
 </head>
 
@@ -41,7 +41,7 @@
                 <div class="box" style="padding-bottom: 20px;">
                     <h3 class="title">Machine Learning Loan Application </h3>
                     <hr>
-                    <img src='{{url_for("static", filename="Resources/Financial_loan_pic.png")}}' alt="Finance Pic" style="width:100%" class="w3-hover-opacity"/>
+                    <img src='{{url_for("static", filename="resources/Financial_loan_pic.png")}}' alt="Finance Pic" style="width:100%" class="w3-hover-opacity"/>
                     
                     <p> Processing loans are a critical part of the core business for banks and various other financial institutions. The main profit comes from the loans interest. Financial institutions grant loans after they verify, validate and approve an applicant. Approving an applicant is risky as the company issuing the loan doesn't have assurance if the applicant will or has the ability to pay back the loan. 
 
@@ -88,7 +88,7 @@
                     </div>
                     <br>
                     <hr>
-                    <h3 class="title ">Loan Approval Prediction</h3>
+                    <h3 class="title ">My Loan Approval Prediction</h3>
                     <form method="POST" action="/model" role="form", name="petform">
                         
                         <div class="form-group">
@@ -107,10 +107,12 @@
                         </div>  
                         <br>          <input type="submit" value="Submit" class="btn btn-primary">  
                       </form>
-                      <br> 
+                    <br> 
+                    <div style= "color:black"> 
                     
-                      Your loan was {{prediction}}
-                      
+                    Your loan was {{prediction}}
+
+                    </div>  
                 </div>
             </div>
         </div>

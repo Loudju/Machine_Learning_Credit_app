@@ -36,7 +36,7 @@ body {
 
 .dropdown .dropdown-menu .dropdown-item:active,
 .dropdown .dropdown-menu .dropdown-item:hover {
-    background-c color: rgb(127, 132, 214);
+    background-color: rgb(127, 132, 214);
 }
 
 .nav-link:hover {
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: color: rgb(127, 132, 214);
+    color: rgb(127, 132, 214);
 }
 
 a {
