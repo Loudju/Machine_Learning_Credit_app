@@ -1,0 +1,379 @@
+body {
+    background-image: url("");
+    height: 750px;
+    background-position: right;
+    background-repeat: repeat;
+    background-size: 1000px 1300px;
+}
+
+.navbar {
+    max-height: 50px;
+}
+
+.navigation .navbar-brand {
+    color: rgb(165, 52, 99);
+    margin-left: 0px;
+    padding: inherit;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    font-family: cochin;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    font-size: 25px;
+}
+
+.active,
+.dropdown-menu .dropdown-item:active a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.dropdown-item {
+    color: rgba(165, 52, 99, 0.75);
+}
+
+.dropdown .dropdown-menu .dropdown-item:active,
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(165, 52, 99, 0.75);
+}
+
+.nav-link:hover {
+    background-color: rgba(165, 52, 99, 0.75);
+}
+
+.navbar-brand:hover {
+    color: rgb(165, 52, 99);
+}
+
+a {
+    color: rgb(197, 197, 197);
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.active,
+.panel:hover {
+    border-color: rgb(165, 52, 99);
+    border-style: solid;
+}
+
+.vizualization {
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    color: rgb(165, 52, 99);
+    font-family: cochin;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+p {
+    color: rgb(165, 52, 99);
+    font-family: 'segoe ui';
+    font-size: 16px;
+}
+
+.box {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    padding: 10px 30px 10px;
+    color: #ffffff;
+    background-color: rgb(255, 255, 255);
+}
+
+.table {
+    font-size: 15px;
+    border-top-color: rgb(255, 255, 255);
+}
+
+footer {
+    background-color: #000000;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgb(85, 30, 51);
+    color: rgb(202, 150, 157);
+    min-height: 50px;
+    font-family: Menlo, Helvetica, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px;
+}
+
+@media(max-width: 992px) {
+    .navbar-expand-lg {
+        background-color: #000000;
+    }
+    .navbar {
+        max-height: none;
+        padding: inherit;
+    }
+    .navbar div {
+        margin: inherit;
+        background-color: rgb(255, 255, 255);
+    }
+    .navbar-brand {
+        padding: 10px;
+    }
+    button {
+        margin-right: 30px;
+    }
+    button:focus {
+        outline: 1px dotted;
+        outline: auto 5px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 130px;
+    overflow: auto;
+}
+
+
+/* The footer is positioned at the bottom of the page */
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 100px;
+    background: #4e5d6c;
+}
+
+
+/* The code styles the text at the bottom of the footer */
+
+.footer>.bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    background: #1b3146;
+}
+
+.navbar {
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* This CSS styles the ufo icon in the navbar */
+
+.nav-ufo {
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+    width: 35px;
+    color: white;
+}
+
+
+/* Adding styles to the aside and filter form */
+
+.ufo-form {
+    margin-top: 50px;
+}
+
+.filters .panel-body {
+    padding: 0;
+}
+
+.filters {
+    margin-top: 10px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    color: #8e979f;
+    outline: none;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+#table-area th {
+    text-align: left;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+    min-width: 70px;
+}
+
+.loader {
+    margin-top: 50px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+
+/* The styles for the parallax */
+
+.hero {
+    position: relative;
+    height: 550px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("../images/US.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.hero h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+}
+
+.hero p {
+    font-size: 2rem;
+    opacity: 0;
+    animation: subtitle 1.2s forwards linear;
+    animation-delay: 1.2s;
+}
+
+
+/* input placeholder color changes */
+
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #8e979f;
+}
+
+
+/* media queries which will only be activated at specific screen sizes */
+
+@media (max-width: 800px) {
+    #table-area td {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    #table-area thead {
+        display: none;
+    }
+    #table-area tr td:first-child {
+        font-size: 1.8em;
+        font-weight: bold;
+        background: #1b3146;
+    }
+    #table-area tr td:last-child {
+        margin-bottom: 20px;
+    }
+    #table-area tr td:last-child::after {
+        display: block;
+        width: 100%;
+        height: 1px;
+        margin-top: 20px;
+        content: " ";
+        background: aliceblue;
+    }
+    #table-area td {
+        font-size: 1.25em;
+    }
+    #table-area tbody td {
+        display: block;
+        text-align: left;
+    }
+    #table-area tbody td::before {
+        display: block;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: left;
+        content: attr(data-th);
+    }
+    .hero h1 {
+        animation: smaller-title 1.2s forwards linear;
+    }
+}
+
+
+/* keyframe animations which will be used to animate the title */
+
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        font-size: 7.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes smaller-title {
+    from {
+        opacity: 0;
+    }
+    to {
+        font-size: 5.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes subtitle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
