@@ -1,5 +1,5 @@
 body {
-    background-image: url("");
+    background-image: ("static/image/fiancial_loan_pic.png");
     height: 750px;
     background-position: right;
     background-repeat: repeat;
@@ -11,7 +11,7 @@ body {
 }
 
 .navigation .navbar-brand {
-    color: rgb(165, 52, 99);
+    color: rgb(127, 132, 214);
     margin-left: 0px;
     padding: inherit;
     font-weight: bold;
@@ -30,20 +30,20 @@ body {
 }
 
 .dropdown-item {
-    color: rgba(165, 52, 99, 0.75);
+    color: rgba(8, 8, 8, 0.75);
 }
 
 .dropdown .dropdown-menu .dropdown-item:active,
 .dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: rgba(165, 52, 99, 0.75);
+    background-c color: rgb(127, 132, 214);
 }
 
 .nav-link:hover {
-    background-color: rgba(165, 52, 99, 0.75);
+    background-color: rgba(159, 163, 224, 0.75);
 }
 
 .navbar-brand:hover {
-    color: rgb(165, 52, 99);
+    color: color: rgb(127, 132, 214);
 }
 
 a {
