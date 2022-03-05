@@ -1,3 +1,4 @@
+/* This is to remove the background image. 
 body {
     background-image: ("static/image/fiancial_loan_pic.png");
     height: 750px;
@@ -5,7 +6,7 @@ body {
     background-repeat: repeat;
     background-size: 1000px 1300px;
 }
-
+*/
 .navbar {
     max-height: 50px;
 }
